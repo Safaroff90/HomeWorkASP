@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    List<string> students = (List<string>)ViewBag.Students;
+}
+
+<h1>Index</h1>
+
+<h3>Students count : @students.Count</h3>
+
+<ul>
+    @for(var i = 0; i < students.Count; i++){
+        <li>
+            @students[i]
+        </li>
+    }
+</ul>
+
